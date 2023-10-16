@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @apply text-pink-700
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    @apply bg-pink-200
+}
+
+.input {
+    @apply mb-4 h-10 border-gray-100 rounded bg-pink-50 w-full placeholder:text-pink-700 p-2
+}
+
+.colCenter{
+    @apply flex items-center justify-center flex-col
+}
+
+.title {
+    @apply text-2xl font-bold
 }
