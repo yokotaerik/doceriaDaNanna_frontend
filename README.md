@@ -1,4 +1,4 @@
-# Doceria DaNanna front-end <br/>
+# Doceria DaNanna front-end (Em desenvolvimento) <br/>
 
 ## Objetivo: <br/>
   Um sistema com a finalidade de gerenciar os pedidos de um estabelecimento alimenticio.
