@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Doceria DaNanna front-end (Em desenvolvimento) <br/>
 
-## Getting Started
+## Objetivo: <br/>
+  Um sistema com a finalidade de gerenciar os pedidos de um estabelecimento alimenticio.
+## Funcionalidades: <br/>
+  Criar usuários que são os funcionarios do estabelecimento. <br/>
 
-First, run the development server:
+  Criar categorias e atribuir itens a estas categorias, por exemplo, categorias de bolos e o item bolo de prestigio.  <br/>
+  
+  Criar pedidos atruibidos a mesas e clientes, o pedido fica em rascunho até que seja validado. <br/>
+
+  Dashboard, mostrando os pedidos que foram validados e ainda não foram entregues, quando o pedido for entregue o status dele muda e sai do dashboard  <br/>
+
+## Tecnologias
+
+### Para a lógica do projeto:
+  ReactJS <br/>
+  NextJS  <br/>
+  Typescript  <br/>
+
+## Motivação
+
+  Criar um projeto full-stack para integrar um back-end com com o frontend, criando um serviço com utilidade no mundo real, assim aprofundando meus conhecimentos em React e Next.
+
+
+## Tela de login: <br/>
+![image](https://github.com/yokotaerik/doceriaDaNanna_frontend/assets/142221764/f587ef26-c50f-4eb6-a3e3-0cb1211bab0d)  <br/>
+
+## Tela de cadastro:  <br/>
+![image](https://github.com/yokotaerik/doceriaDaNanna_frontend/assets/142221764/7103e4ee-f108-4f35-b94d-d09586819305)  <br/>
+
+## Como iniciar
+
+Inicie por um dos comandos:
 
 ```bash
 npm run dev
@@ -14,27 +43,8 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse o endereço: 
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+localhost:3000
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Acesse o endereço[http://localhost:3000](http://localhost:3000) 
