@@ -5,6 +5,8 @@ import { useContext, useState } from 'react'
 import { AuthContext } from '@/contexts/authContext'
 import Button from '@/components/ui/button'
 import Input from '@/components/ui/input'
+import Link from 'next/link'
+import { toast } from 'react-toastify'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,8 +24,14 @@ export default function Home() {
   async function handleLogin(e: React.FormEvent<HTMLFormElement>): Promise<void>{
     e.preventDefault()
 
+    
+    if (email == '' || password == ''){
+      toast.warning("Preencha os campos")
+      return
+    }
+    
     setLoading(true)
-
+    
     let data = {
       email,
       password,
@@ -49,7 +57,7 @@ export default function Home() {
           <Input placeholder='Digite sua senha'  type='password' value={password} onChange={ (e) => setPassword(e.target.value)}/>
           <Button type='submit' loading={loading}> Acessar </Button>
         </form>
-        <a href="/cadastro" className='mt-8'> Não possui uma conta? Cadastre-se</a>
+        <Link href="/cadastro" className='mt-8'> Não possui uma conta? Cadastre-se</Link>
       </div>
     </div>
     </>
