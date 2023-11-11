@@ -6,6 +6,8 @@ import { useContext, useState } from 'react'
 import { AuthContext } from '@/contexts/authContext'
 import Link from 'next/link'
 import { toast } from 'react-toastify'
+import { canSSRGuest } from '@/utils/canSSRGuest'
+import Head from 'next/head'
 
 export default function Cadastro() {
 
@@ -48,6 +50,9 @@ export default function Cadastro() {
 
   return (
     <>
+    <Head>
+      <title> Cadastro </title>
+    </Head>
     <div className='colCenter min-h-screen'>
       <div className='colCenter w-72 md:w-[26rem]'>
         <Image
@@ -69,3 +74,9 @@ export default function Cadastro() {
     </>
   )
 }
+
+export const getServerSideProps = canSSRGuest(async (ctx) => {
+  return {
+    props: {}
+  }
+})

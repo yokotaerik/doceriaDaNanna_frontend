@@ -15,7 +15,7 @@ body {
 }
 
 .input {
-    @apply mb-4 h-10 border-gray-100 rounded bg-pink-50 w-full placeholder:text-pink-700 p-2
+    @apply mb-4 h-10 border-pink-500 border-2 rounded bg-pink-50 w-full placeholder:text-pink-700 p-2
 }
 
 .colCenter{
@@ -25,3 +25,12 @@ body {
 .title {
     @apply text-2xl font-bold
 }
+
+.orderItem{
+    @apply flex bg-pink-500 w-full rounded h-12 text-rose-100 items-center 
+}
+
+.tag {
+    @apply w-2 bg-pink-900 h-full rounded-s mr-3
+}
+
